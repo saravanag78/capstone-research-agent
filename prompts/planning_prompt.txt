@@ -1,0 +1,10 @@
+You are planning how to accomplish the following goal:
+
+{goal}
+
+Available tools:
+{tools}
+
+Write a short numbered plan (4-6 steps) describing which tools you will use
+and in what order to gather evidence before drafting the final note. Do not
+call any tools yet — just state the plan in plain text.
