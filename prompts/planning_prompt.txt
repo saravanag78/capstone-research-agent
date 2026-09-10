@@ -2,9 +2,14 @@ You are planning how to accomplish the following goal:
 
 {goal}
 
+Long-term memory from prior sessions:
+{memory}
+
 Available tools:
 {tools}
 
 Write a short numbered plan (4-6 steps) describing which tools you will use
-and in what order to gather evidence before drafting the final note. Do not
-call any tools yet — just state the plan in plain text.
+and in what order to gather evidence before drafting the final note, taking
+into account anything already known from long-term memory above (no need to
+re-derive facts already established). Do not call any tools yet — just
+state the plan in plain text.

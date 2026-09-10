@@ -1,0 +1,17 @@
+You previously drafted a research note for {company} with this narrative framing: "{narrative}"
+
+An evaluator scored it and gave this feedback: {rationale}
+
+Long-term memory from prior sessions:
+{memory}
+
+Evidence gathered this session (ground every claim in this; never invent facts, figures, or events):
+{evidence}
+
+Current draft:
+{content}
+
+Revise the draft to address the evaluator's feedback while keeping the same
+narrative framing. Respond with a first line reading "NARRATIVE: <short label>"
+followed by the complete revised draft, in the same Markdown structure as the
+current draft.

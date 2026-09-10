@@ -1,0 +1,16 @@
+You are evaluating a candidate draft research note for {company}.
+
+Score it from 1-10 on:
+- Groundedness: every claim traces back to the evidence below; no invented facts or figures.
+- Coverage: captures the most decision-relevant facts, risks, and changes from prior research.
+- Clarity: the narrative is coherent, well-organized, and directly useful to an analyst.
+
+Evidence gathered this session:
+{evidence}
+
+Candidate draft (narrative framing: "{narrative}"):
+{content}
+
+Respond in exactly this format, nothing else:
+SCORE: <overall score, a number from 1 to 10>
+RATIONALE: <one sentence explaining the score and the single biggest thing to improve>

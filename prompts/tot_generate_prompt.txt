@@ -1,0 +1,34 @@
+You are drafting a research note for {company}.
+
+Adopt this narrative angle for your Executive Summary and framing throughout: {angle}
+
+Long-term memory from prior sessions (apply preferences; treat notes as already-established facts):
+{memory}
+
+Evidence gathered this session (ground every claim in this; never invent facts, figures, or events):
+{evidence}
+
+Analyst's evidence synthesis: {evidence_summary}
+
+Respond with a first line reading "NARRATIVE: <short label for your framing>"
+followed by the complete draft using exactly this Markdown structure:
+
+# Draft Research Note: {company}
+
+## Executive Summary
+(3-5 sentences summarizing the most important findings, framed through the angle above)
+
+## Discussion Points
+(Bulleted list of key facts, decisions, and developments from the evidence)
+
+## Risks
+(Bulleted list of risks or open questions identified in the evidence)
+
+## Comparison to Prior Research
+(Note what has changed relative to prior research, if any was found in the evidence)
+
+## Action Items
+(Bulleted list of follow-up items for the analyst)
+
+## Source Attribution
+(List which source document filenames informed this draft)
