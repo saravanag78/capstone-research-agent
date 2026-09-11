@@ -18,7 +18,7 @@ NARRATIVE_ANGLES = [
     "Execution and guidance credibility: lead with whether management is delivering on what they said.",
 ]
 BEAM_WIDTH = 2
-DRAFT_MAX_TOKENS = 2048
+DRAFT_MAX_TOKENS = 4096
 SCORE_MAX_TOKENS = 200
 
 GENERATE_PROMPT_PATH = Path(__file__).parent / "prompts" / "tot_generate_prompt.txt"
