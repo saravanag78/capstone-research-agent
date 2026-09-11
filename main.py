@@ -23,7 +23,7 @@ from prompt_builder import build_prompt
 OUTPUT_DIR = Path(__file__).parent / "output"
 
 
-def run_linear(company: str) -> None:
+def run_linear(company: str) -> str:
     documents = load_documents()
     if not documents:
         print("No source documents found under data/. Add .txt files and retry.", file=sys.stderr)
@@ -44,6 +44,7 @@ def run_linear(company: str) -> None:
 
     print(f"\nDraft research note written to {output_path}\n")
     print(draft)
+    return draft
 
 
 def run_agent(company: str) -> None:
@@ -68,7 +69,7 @@ def show_memory() -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate a draft research note.")
-    parser.add_argument("--company", default="XYZ Corp", help="Company name for the note")
+    parser.add_argument("--company", default="ABC Company", help="Company name for the note")
     parser.add_argument(
         "--mode",
         choices=["agent", "linear"],

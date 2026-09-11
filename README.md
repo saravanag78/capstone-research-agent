@@ -20,7 +20,7 @@ cp .env.example .env
 # open .env and paste in real values for ANTHROPIC_API_KEY and VOYAGE_API_KEY
 # (see "Setup" below for where to get each key)
 
-python main.py --company "IONQ"
+python main.py --company "ABC Company"
 ```
 
 That last command is the whole pipeline end to end: planning, the ReAct
@@ -175,16 +175,16 @@ You need two API keys:
 
 ```bash
 # Run the full agent (planning + ReAct + RAG + memory + Tree of Thoughts + evaluation)
-python main.py --company "IONQ"
+python main.py --company "ABC Company"
 
 # Run the Week 1 baseline instead — a single linear load -> prompt -> generate pass
-python main.py --company "IONQ" --mode linear
+python main.py --company "ABC Company" --mode linear
 
 # Save a standing analyst preference (applies to this and every future run)
 python main.py --remember "always lead with the biggest guidance change"
 
 # Save a preference and run in the same command
-python main.py --remember "always flag regulatory risk first" --company "IONQ"
+python main.py --remember "always flag regulatory risk first" --company "ABC Company"
 
 # Inspect stored long-term memory (no API calls)
 python main.py --show-memory
@@ -199,11 +199,28 @@ A full agent run costs noticeably more than the Week 1 baseline — expect
 roughly 10 extra Claude calls for the Tree-of-Thought search on top of the
 ReAct loop itself.
 
+### Web UI
+
+For a research analyst who'd rather not use the command line:
+
+```bash
+streamlit run app.py
+```
+
+This opens a local web page (`app.py`) with a company-name field and a
+"Generate Draft Research Note" button. It's a UI over the same
+`ReActAgent`/`run_linear` functions the CLI calls — there's no separate
+API server, since the only client is a human clicking a button in the same
+process. The sidebar shows and lets you add long-term memory preferences,
+the run log streams live as the agent works, and the finished draft is
+shown as rendered Markdown with a download button.
+
 ## Project Structure
 
 ```
 capstone-research-agent/
-├── main.py                      # entry point: --mode agent (default) or linear; --remember; --show-memory
+├── app.py                        # Streamlit web UI: streamlit run app.py
+├── main.py                      # CLI entry point: --mode agent (default) or linear; --remember; --show-memory
 ├── agent.py                     # planning + ReAct loop; memory, Tree-of-Thought handoff, evaluation
 ├── tools.py                     # tool abstraction layer; catches and recovers from tool failures
 ├── rag.py                       # chunk -> embed -> index -> retrieve pipeline
@@ -260,7 +277,7 @@ capstone-research-agent/
 ## Reviewing the Project
 
 If you're reviewing this against the weekly deliverables rather than just
-running it, a single `python main.py --company "IONQ"` exercises nearly
+running it, a single `python main.py --company "ABC Company"` exercises nearly
 everything — the table below says which part of that one run's terminal
 output, and which file, corresponds to each week. Each run costs a live
 API call (see [Design Notes & Limitations](#design-notes--limitations)),

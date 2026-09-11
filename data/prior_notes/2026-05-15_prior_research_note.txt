@@ -1,10 +1,10 @@
 PRIOR RESEARCH NOTE
-Company: IONQ
+Company: ABC Company
 Date: 2026-05-15
 Analyst: A. Patel
 
 Executive Summary:
-XYZ Corp delivered solid Q1 results with revenue growth of 9% YoY, in line with
+ABC Company delivered solid Q1 results with revenue growth of 9% YoY, in line with
 expectations. No major strategic initiatives were announced during the quarter.
 Management guided FY2026 growth of 8-10%, citing stable demand in core markets.
 

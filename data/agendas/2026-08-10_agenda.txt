@@ -1,7 +1,7 @@
 MEETING AGENDA
-Company: IONQ
+Company: ABC Company
 Date: 2026-08-10
-Attendees: J. Rivera (CFO, XYZ Corp), A. Patel (Lead Analyst), M. Chen (Research Associate)
+Attendees: J. Rivera (CFO, ABC Company), A. Patel (Lead Analyst), M. Chen (Research Associate)
 
 Agenda Items:
 1. Review Q2 earnings performance
